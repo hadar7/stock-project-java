@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+
+
+<TabPane id="tabPane" fx:id="usersTabPane" prefHeight="288.0" prefWidth="462.0" stylesheets="@leftSide.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="leftSide.LeftSideController" />

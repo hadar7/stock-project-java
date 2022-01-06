@@ -1,0 +1,21 @@
+#headerLabel {
+    -fx-font-size: 32px;
+    -fx-font-family:Aharoni;
+    -fx-fill: #7ab2c4;
+    -fx-effect: innershadow( three-pass-box , rgb(145, 217, 234), 6, 0.0 , 0 , 2 );
+}
+
+.smallLabels{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #467396;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+
+}
+.dynamicLabels{
+    -fx-font-size: 13px;
+    -fx-text-fill: #438094;
+}
+
+
+

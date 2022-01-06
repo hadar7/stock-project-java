@@ -1,0 +1,49 @@
+.staticLabels{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #467396;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.errorLabels{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ea1313;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#user-label{
+    -fx-font-size:20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #467396;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#stocksComboBox .list-cell
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: #467396;
+    -fx-font-weight: bold;
+}
+#doneButton{
+    -fx-text-fill: #072945;
+    fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #467396);
+
+}
+#doneButton:hover {
+    -fx-background-color: linear-gradient(#70c2d6, #467396);
+}
+#cancelButton{
+    -fx-text-fill: #072945;
+    fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+#cancelButton:hover{
+    -fx-background-color: linear-gradient(transparent, #757a7e);
+
+}
+/*#stocksComboBox .list-view  .list-cell{
+    -fx-background-color: #a8d1f1;
+    font-family: Arial;
+    -fx-fill: #467396;
+}

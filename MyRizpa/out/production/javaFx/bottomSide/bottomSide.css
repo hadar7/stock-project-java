@@ -1,0 +1,11 @@
+.button{
+    -fx-background-color: #467783;
+    -fx-text-fill: white;
+}
+.label{
+    -fx-text-fill:RED;
+    -fx-font-weight: bold;
+}
+.button:hover{
+    -fx-background-color:linear-gradient(#2A5058, #467783);
+}

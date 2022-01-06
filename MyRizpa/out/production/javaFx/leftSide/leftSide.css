@@ -1,0 +1,33 @@
+
+/*.tab:selected {
+    -fx-background-color: #667a9b;
+    -fx-text: white;
+}*/
+.tab-label {
+    -fx-text-fill:#667a9b
+}
+.tab {
+    -fx-font-family: Arial;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+
+
+}
+
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: transparent;
+}
+.tab-pane *.tab-header-area
+{
+    -fx-font-family: Arial;
+    -fx-font-size: 17;
+    -fx-text-fill: #adc1e0
+}
+.accordion{
+    -fx-text-fill:#667a9b ;
+}
+.titled-pane > .title > .text
+{
+    -fx-fill:#667a9b ;
+}

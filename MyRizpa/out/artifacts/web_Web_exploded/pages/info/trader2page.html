@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../resources/jquery-2.0.3.min.js"></script>
+    <script src="../../resources/context-path-helper.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="trader2page.js"></script>
+    <script src=chatroom.js></script>
+    <link href="trader2page.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="messagePlace"></div>
+
+
+<h3>RSE World</h3>
+<form id="fileform" action="fileupload" enctype="multipart/form-data" method="POST">
+    <input type="file" name="file1"><br>
+    <input type="Submit" value="Upload File">
+</form>
+<button id="myBtn">New Stock</button>
+<button onclick="myPrompt()">load money</button>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="sidebar">
+                <h5>Chat</h5>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="content">
+                <div id="chatwindow">
+                    <div id="chatarea" class="span6"></div>
+                    <form id="chatform" method="POST" action="sendchat">
+                        <input type="text" id="userstring" name="userstring"/>
+                        <input type="submit" value="Send"/>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<h5>users online</h5>
+<div>
+    <table id="usersTable" >
+    </table>
+</div>
+<div>
+    <h5>stocks</h5>
+    <table id="stocksTable" class="table2" >
+        <tr>
+            <th>company name</th>
+            <th>symbol</th>
+            <th>rate</th>
+            <th>total</th>
+            <th>show stock</th>
+        </tr>
+
+    </table>
+</div>
+<div>
+    <h5>account</h5>
+    <table id="accountTable" class="table2" >
+        <tr>
+           <th>type</th>
+            <th>date</th>
+            <th>amount</th>
+            <th>balance before</th>
+            <th>balance after</th>
+        </tr>
+    </table>
+</div>
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+        <h5>Please enter the details about your new company :</h5>
+            <form  id="newStockform" action="usersmap" method="post" class="newStockform" >
+            <label for="company">Company Name:</label>
+             <input type="text" id="company" name="company" required><br><br>
+            <label for="symbol">Symbol:</label>
+             <input type="text" id="symbol" name="symbol" required><br><br>
+            <label for="amount">Amount:</label>
+          <input type="text" id="amount" name="amount" required><br><br>
+            <label for="symbol">Estimated value:</label>
+             <input type="text" id="value" name="value" required><br><br>
+                <input type="submit" value="Done">
+                <div id="messagePlaceModal"></div>
+            </form>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
